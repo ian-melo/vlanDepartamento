@@ -13,6 +13,7 @@ public class Authentication {
     @Column(name = "IdUsuario")
     private Long IdUsuario;
 
+    @Column (name = "NomeUsuario")
     private String NomeUsuario;
 
     @Column(name = "segredo")
