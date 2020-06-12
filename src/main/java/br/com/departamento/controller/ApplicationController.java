@@ -17,9 +17,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
 import br.com.departamento.dto.DepartmenInfo;
+import br.com.departamento.dto.LoginRequest;
 import br.com.departamento.dto.TicketInfo;
 import br.com.departamento.dto.UserInfo;
-import br.com.departamento.dto.controller.LoginRequest;
 import br.com.departamento.service.AuthenticationService;
 import br.com.departamento.service.DepartmentService;
 import br.com.departamento.service.UserService;
