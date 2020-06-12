@@ -27,7 +27,7 @@ public class UserService {
 		outputFormat = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
 	}
 
-	public UserInfo getInfo(long id) {
+	public UserInfo getInfo(final long id) {
 		Object[] info = (Object[]) repository.findInfo(id);
 		
 		return UserInfo.builder()
@@ -37,7 +37,7 @@ public class UserService {
 				.identifier(Long.parseLong(String.valueOf(info[3]))).build();
 	}
 	
-	public List<TicketInfo> getTickets(long id) {
+	public List<TicketInfo> getTickets(final long id) {
 		List<Object> tickets = repository.findTickets(id);
 		return tickets.stream()
 				.map(ticket -> {

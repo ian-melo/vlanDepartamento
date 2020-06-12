@@ -1,5 +1,6 @@
 package br.com.departamento.repository;
 
+import java.util.Date;
 import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -21,4 +22,8 @@ public interface UsuarioRepository extends JpaRepository<UsuarioEntity, Long> {
 	
 	@Query(value = "CALL spMontaMenu();", nativeQuery = true)
 	List<Object> listDepartments();
+	
+	@Query(value = "CALL spCriaChamado(:idUsuario, :idVLanDestino, :horaMudanca, :justificativa);", nativeQuery = true)
+	String insertTicket(@Param("idUsuario") long id, @Param("idVLanDestino") long vlan,
+			@Param("horaMudanca") Date dateTime, @Param("justificativa") String reason);
 }
