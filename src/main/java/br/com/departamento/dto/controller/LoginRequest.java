@@ -1,4 +1,4 @@
-package br.com.departamento.controller.dto;
+package br.com.departamento.dto.controller;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

@@ -18,7 +18,7 @@ public class AuthenticationService {
 	}
 
 	public void authenticate(long id, String password) {
-		if(repository.login(id, password) == 0)
+		if(repository.authenticate(id, password) == 0)
 			throw new UserAuthenticationException(id);
 	}
 }
