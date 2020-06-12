@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
-import br.com.departamento.controller.dto.LoginRequest;
+import br.com.departamento.dto.LoginRequest;
 import br.com.departamento.service.AuthenticationService;
 import lombok.extern.slf4j.Slf4j;
 
